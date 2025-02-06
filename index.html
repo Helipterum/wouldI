@@ -23,7 +23,8 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            width: 350px;
+            width: 90%; /* Adjust width for responsiveness */
+            max-width: 350px; /* Max width for larger screens */
             position: relative;
             z-index: 1;
         }
@@ -31,7 +32,7 @@
         .poem {
             font-family: 'Brush Script MT', cursive;
             color: #444;
-            font-size: 20px;
+            font-size: 18px; /* Adjust font size for mobile */
             line-height: 1.6;
             white-space: pre-wrap;
         }
@@ -72,6 +73,22 @@
         .heart:nth-child(8) { bottom: 35%; right: 30%; animation-delay: 3.5s; }
         .heart:nth-child(9) { top: 70%; left: 50%; animation-delay: 1s; }
         .heart:nth-child(10) { top: 15%; right: 50%; animation-delay: 2s; }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 600px) {
+            .poem {
+                font-size: 16px; /* Smaller font size on small screens */
+            }
+
+            .invitation {
+                padding: 20px; /* Less padding on mobile */
+            }
+
+            .heart {
+                width: 30px;
+                height: 30px;
+            }
+        }
     </style>
 </head>
 <body>
