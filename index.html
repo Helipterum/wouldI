@@ -19,12 +19,12 @@
 
         .invitation {
             background-color: white;
-            padding: 40px;
+            padding: 5vw; /* Padding using viewport width */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            width: 90%; /* Adjust width for responsiveness */
-            max-width: 350px; /* Max width for larger screens */
+            width: 90%; /* Adjusts width to 90% of viewport */
+            max-width: 400px; /* Max width of 400px */
             position: relative;
             z-index: 1;
         }
@@ -32,7 +32,7 @@
         .poem {
             font-family: 'Brush Script MT', cursive;
             color: #444;
-            font-size: 18px; /* Adjust font size for mobile */
+            font-size: 5vw; /* Responsive font size based on viewport width */
             line-height: 1.6;
             white-space: pre-wrap;
         }
@@ -48,8 +48,8 @@
 
         .heart {
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: 8vw; /* Responsive heart size */
+            height: 8vw;
             background-color: #ff6b81;
             clip-path: polygon(50% 0%, 61% 14%, 75% 20%, 85% 35%, 85% 50%, 75% 65%, 50% 100%, 25% 65%, 15% 50%, 15% 35%, 25% 20%, 39% 14%);
             opacity: 0.8;
@@ -77,16 +77,16 @@
         /* Media Queries for Mobile */
         @media (max-width: 600px) {
             .poem {
-                font-size: 16px; /* Smaller font size on small screens */
+                font-size: 6vw; /* Larger font size for smaller screens */
             }
 
             .invitation {
-                padding: 20px; /* Less padding on mobile */
+                padding: 8vw; /* More padding on smaller screens */
             }
 
             .heart {
-                width: 30px;
-                height: 30px;
+                width: 12vw; /* Bigger hearts for smaller screens */
+                height: 12vw;
             }
         }
     </style>
