@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Poem</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .invitation {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .poem {
+            font-family: 'Brush Script MT', cursive;
+            color: #444;
+            font-size: 20px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #ff6b81;
+            clip-path: polygon(50% 0%, 61% 14%, 75% 20%, 85% 35%, 85% 50%, 75% 65%, 50% 100%, 25% 65%, 15% 50%, 15% 35%, 25% 20%, 39% 14%);
+            opacity: 0.8;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Random heart placements */
+        .heart:nth-child(1) { top: 10px; left: 20px; animation-delay: 0s; }
+        .heart:nth-child(2) { top: 30px; right: 20px; animation-delay: 1s; }
+        .heart:nth-child(3) { bottom: 30px; left: 30px; animation-delay: 2s; }
+        .heart:nth-child(4) { bottom: 20px; right: 10px; animation-delay: 3s; }
+        .heart:nth-child(5) { top: 50%; left: 10%; animation-delay: 0.5s; }
+        .heart:nth-child(6) { top: 40%; right: 15%; animation-delay: 1.5s; }
+        .heart:nth-child(7) { bottom: 45%; left: 25%; animation-delay: 2.5s; }
+        .heart:nth-child(8) { bottom: 35%; right: 30%; animation-delay: 3.5s; }
+        .heart:nth-child(9) { top: 70%; left: 50%; animation-delay: 1s; }
+        .heart:nth-child(10) { top: 15%; right: 50%; animation-delay: 2s; }
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+    <div class="invitation">
+        <div class="poem">
+            WOULD I?
+
+            Give me your early mornings
+            Give me your half-awake eyes
+            Drag me in when you're pulling away
+            Match our breaths that we've synchronized
+
+            Give me your slow afternoons
+            Give me your train of thought
+            Distract me with your sugar-coated mouth
+            And watch back as my teeth rot
+
+            Give me your all-nighters
+            Give me your secrets never said out loud
+            Cry into my collarbones
+            You're safe with me, I vow
+
+            Give me your bad days
+            Give me the sweetest ones, too
+
+            I'll follow you to heaven,
+            Even hell if I'm with you.
+        </div>
+    </div>
+</body>
+</html>
